@@ -1,0 +1,32 @@
+{% set name = "libusdusb4" %}
+{% set version = "1.0.0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pswww.slac.stanford.edu/swdoc/tutorials/
+  sha256: 0ebed857ccacca72b7a1ade3f46168c7a87f355a5b99c38ed3c40008df6e8009 
+
+build:
+  skip: True  # [win or osx]
+  number: 0
+
+about:
+  home: https://www.usdigital.com
+  summary: 'Software for  USB4 encoder box'
+  description: |
+    This is a shared library blob that is provided
+    by US Digital for the USB4 encoder box
+  doc_url: https://www.usdigital.com/products/accessories/interfaces/USB4
+  dev_url: https://www.usdigital.com/products/accessories/interfaces/USB4
+
+extra:
+  recipe-maintainers:
+    - valmar
+    - chrisvam
+
+
+
+
